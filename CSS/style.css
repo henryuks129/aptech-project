@@ -1,0 +1,123 @@
+/* General body & tag styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+}
+
+li{
+    list-style: none;
+    padding: 7px;
+}
+
+/* li:hover{
+    border-bottom: 2px solid aqua;
+    animation: borders 0.5ms ease-in normal backwards
+} */
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* End of General body & tag styles */
+
+/* hero background */
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+[data-image="hero_background_image"] {
+    background-image: url("../Assets/HERO/hero-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: top center;
+}
+/* end of hero background */
+
+/* Navbar styles */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+[data-list="nav_items_list"]{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+[data-nav-icon="nav_icons_body"]{
+    display: flex;
+    gap: 25px;
+}
+
+[data-nav-icon="nav_icons_body"]::before{
+    content: "";
+    width: 1px;
+    background: rgba(225, 225, 225, 0.2);
+    height: 13px;
+    margin: auto;
+    margin-right: 25px;
+}
+
+.nav_icons{
+    width: 18px;
+    height: 18px;
+    color: white;
+    font-size: 16px;
+}
+
+.nav_link {
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav_link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: aqua;
+    transition: width 0.5s ease, left 0.5s ease;
+}
+
+.nav_link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav_link.active{
+    border-bottom: 2px solid aqua;
+    padding-top: 9.5px;
+}
+
+/* End of Navbar */
+
+/* Animations */
+
+@keyframes borders {
+    50%{
+        border-bottom: 2px solid aqua;
+    }
+}
+
+/* End of Animations */
+
