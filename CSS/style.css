@@ -196,6 +196,7 @@ nav {
 
 .hero-section .about-us .hero-numbers p.active::after {
   background: white;
+  height: 2px;
 }
 
 /* Animations */

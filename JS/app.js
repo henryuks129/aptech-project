@@ -42,6 +42,8 @@ let currentIndex = 0;
 function nextSlide() {
   currentIndex = currentIndex === heroArray.length - 1 ? 0 : currentIndex + 1;
   updateSlideContent();
+  makeActive();
+  console.log(currentIndex);
 }
 
 function updateSlideContent() {
@@ -50,41 +52,29 @@ function updateSlideContent() {
   seeMoreBtn.textContent = heroArray[currentIndex].button;
 }
 
+function makeActive() {
+  if (currentIndex === 0) {
+    numberOne.classList.add("active");
+  } else {
+    numberOne.classList.remove("active");
+  }
+
+  if (currentIndex === 1) {
+    numberTwo.classList.add("active");
+  } else {
+    numberTwo.classList.remove("active");
+  }
+
+  if (currentIndex === 2) {
+    numberThree.classList.add("active");
+  } else {
+    numberThree.classList.remove("active");
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   updateSlideContent();
+  makeActive();
   // Call nextSlide every 3 seconds
   setInterval(nextSlide, 3000);
-  console.log(currentIndex);
 });
-
-if (heroArray[currentIndex] === "0") {
-  numberOne.classList.add = "active";
-}
-
-if (heroArray[currentIndex] === "1") {
-  numberTwo.classList.add = "active";
-}
-
-if (heroArray[currentIndex] === "2") {
-  numberThree.classList.add = "active";
-}
- 
-// function createNumbers(item) {
-//   return `
-//     <div id="portfolio-item-${item.id}">
-//       <p>${item.id}</p>
-//     </div>
-//   `;
-// }
-
-// function renderPortfolio() {
-//   const numbers = document.getElementById("numbers");
-
-//   // Use map to create an array of HTML strings and join them
-//   const heroArrayHTML = heroArray.map(createNumbers).join("");
-
-//   // Insert the HTML into the container
-//   numbers.innerHTML = heroArrayHTML;
-// }
-
-// document.addEventListener("DOMContentLoaded", renderPortfolio);
