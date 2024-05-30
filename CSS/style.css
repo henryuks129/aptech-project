@@ -56,6 +56,7 @@ nav {
   gap: 20px;
   align-items: center;
   padding: 10px;
+  color: #fff;
 }
 
 [data-nav-icon="nav_icons_body"] {
@@ -208,7 +209,6 @@ nav {
 
 .services_body{
   display:flex;
-  /* flex-wrap: wrap; */
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -225,23 +225,144 @@ nav {
 /* End of Services Section */
 
 /* Video Section */
-[data-video-section="video_section_main"]{
+/* [data-video-section="video_main_section"]{
   background: #100028;
   width: 100%;
-  /* height: 664px; */
+  height: 100%;
 }
 
 .video_section_body{
-  display: grid;
-  grid-template-columns: repeat(3,2fr);
-  /* grid-column-start: 1; */
-  /* grid-template-columns: repeat(auto-fit, minmax(350px,2fr)); */
-  /* grid-auto-rows: 200px; */
-  /* grid-auto-flow: dense; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+} */
+
+/* .first_video_section_items{ */
+  /* display: flex; */
+  /* width: 100%; */
+  /* grid-row: 1/7; */
+/* } */
+
+/* .second_video_section_items{ */
+  /* width: 100%; */
+  /* height: 100%; */
+/* } */
+
+/* .video_main_image{
+  max-width: 100%;
+  height: 70%;
+  object-fit: contain;
+  image-resolution: 1024px;
+} */
+
+/* .video_icon_content{
+  border: 1px solid #fff;
+  height: 64px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .video_play_body{ */
+  /* border: 1px solid #fff;
+  height: 150px;
+  width: 100%; */
+/* } */
+
+/* .video_play_icon{
+  font-size: 18px;
+  height: 45px;
+  width: 45px;
+} */
+
+/* .video_section_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.video_section_body img{
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.video_main_image {
   width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video_icon_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.grid-item:hover .video_icon_content {
+  display: block;
+}
+
+.video_play_icon {
+  width: 50px;
+  height: 50px;
+} */
+
+.video_section_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 10px;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-item.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.video_main_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video_icon_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.grid-item:hover .video_icon_content {
+  display: block;
+}
+
+.video_play_icon {
+  width: 50px;
+  height: 50px;
 }
 /* End of Video Section */
 
@@ -255,7 +376,7 @@ nav {
 
 .counter_content{
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -295,8 +416,6 @@ nav {
   transform: rotate(45deg);
 }
 
-/* .counter_second_items::before{} */
-
 .counter_third_items{
   width: 255px;
   height: 255px;
@@ -307,8 +426,6 @@ nav {
   transform: rotate(45deg);
   margin-bottom: -180px;
 }
-
-/* .counter_third_items::before{} */
 
 .counter_fourth_items{
   /* position: absolute; */
@@ -321,8 +438,6 @@ nav {
   background: #1a083d;
   transform: rotate(45deg);
 }
-
-/* .counter_fourth_items::before{} */
 
 .counter_items_content{
   transform: rotate(-45deg);
@@ -347,6 +462,48 @@ nav {
   margin-bottom: 10px;
 }
 /* End of Counter Section */
+
+/* Teams Section */
+[data-teams="teams_main_section"]{
+  background: url("../Assets/TEAMS/team-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: fit-content;
+}
+
+.teams_image img{
+  width: 257.8px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+}
+/* End of Teams Section */
+
+/* CAT Section */
+[data-cat="call-to-action"]{
+  background: url("../Assets/CAT/callto-bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+/* End of CAT Section */
+
+/* Footer Section */
+[data-footer="footer-section"]{
+  background: #100028;
+  height: 500px;
+}
+
+.footer_logo_section{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer_icon_body{
+  background: rgba(255, 255, 255, 0.1);
+}
+/* End of Footer Section */
 
 /* Animations */
 

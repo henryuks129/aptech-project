@@ -16,6 +16,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Play:wght@400;700&family=Work+Sans:ital@1&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
     <title>Videograph</title>
   </head>
   <body>
@@ -117,7 +125,7 @@
       <!-- Services section -->
       <section data-services="services_main_section">
         <div class="container">
-          <div data-services-details="services_body" class="services_body">
+          <div data-services-details="services_body" class="services_body flex">
             <div>
               <p>OUR SERVICES</p>
               <h2>WHAT WE DO?</h2>
@@ -179,81 +187,229 @@
       </section>
       <!-- End of Services Section -->
       <!-- Video Section -->
-      <section data-video-section="video_section_main">
+      <!-- <section data-video-section="video_main_section">
         <div class="video_section_body">
-          <!-- <div> -->
-            <img src="../Assets/WORK/work-1.jpg" alt="">
-            <!-- <div>
-              <a href=""><img src="" alt=""></a>
-            </div> -->
-          <!-- </div> -->
-          <!-- <div> -->
-            <img src="../Assets/WORK/work-2.jpg" alt="">
-            <!-- <div>
-              <a href=""><img src="" alt=""></a>
-            </div> -->
-          <!-- </div> -->
-          <!-- <div> -->
-            <img src="../Assets/WORK/work-3.jpg" alt="">
-            <!-- <div>
-              <a href=""><img src="" alt=""></a>
-            </div> -->
-          <!-- </div> -->
-          <!-- <div> -->
-            <img src="../Assets/WORK/work-4.jpg" alt="">
-            <!-- <div>
-              <a href=""><img src="" alt=""></a>
-            </div> -->
-          <!-- </div> -->
-          <!-- <div> -->
-            <img src="../Assets/WORK/work-5.jpg" alt="">
-            <!-- <div>
-              <a href=""><img src="" alt=""></a>
-            </div> -->
-          <!-- </div> -->
-          <!-- <div> -->
-            <img src="../Assets/WORK/work-6.jpg" alt="">
-            <!-- <div>
-              <a href=""><img src="" alt=""></a>
-            </div> -->
-          <!-- </div> -->
-          <!-- <div> -->
-            <img src="../Assets/WORK/work-7.jpg" alt="">
-            <!-- <div>
-              <a href=""><img src="" alt=""></a>
-            </div> -->
-          <!-- </div> -->
+          <div class="first_video_section_items">
+            <div>
+              <div>
+                <img src="../Assets/WORK/work-1.jpg" alt="" class="video_main_iamge"> -->
+      <!-- <div class="video_icon_content">
+                  <a href="" class="video_play_body"><img src="../Assets/ICONS/Playbutton.svg" alt="" class="video_play_icon"></a>
+                </div> -->
+      <!-- </div>
+              <div>
+                <img src="../Assets/WORK/work-2.jpg" alt="" class="video_main_iamge"> -->
+      <!-- <div class="video_icon_content">
+                  <a href="" class="video_play_body"><img src="../Assets/ICONS/Playbutton.svg" alt="" class="video_play_icon"></a>
+                </div> -->
+      <!-- </div>
+              <div>
+                <img src="../Assets/WORK/work-3.jpg" alt="" class="video_main_image"> -->
+      <!-- <div class="video_icon_content">
+                  <a href="" class="video_play_body"><img src="../Assets/ICONS/Playbutton.svg" alt="" class="video_play_icon"></a>
+                </div> -->
+      <!-- </div>
+            </div>
+            <div>
+              <div>
+                <img src="../Assets/WORK/work-7.jpg" alt="" class="video_main_iamge"> -->
+      <!-- <div class="video_icon_content">
+                  <a href="" class="video_play_body"><img src="../Assets/ICONS/Playbutton.svg" alt="" class="video_play_icon"></a>
+                </div> -->
+      <!-- </div>
+              <div>
+                <img src="../Assets/WORK/work-5.jpg" alt="" class="video_main_iamge"> -->
+      <!-- <div class="video_icon_content">
+                  <a href="" class="video_play_body"><img src="../Assets/ICONS/Playbutton.svg" alt="" class="video_play_icon"></a>
+                </div> -->
+      <!-- </div>
+              <div>
+                <img src="../Assets/WORK/work-6.jpg" alt="" class="video_main_iamge"> -->
+      <!-- <div class="video_icon_content">
+                  <a href="" class="video_play_body"><img src="../Assets/ICONS/Playbutton.svg" alt="" class="video_play_icon"></a>
+                </div> -->
+      <!-- </div>
+            </div>
+          </div>
+          <div class="second_video_section_items">
+            <div>
+              <img src="../Assets/WORK/work-4.jpg" alt="" class="video_main_image"> -->
+      <!-- <div class="video_icon_content">
+                <a href="" class="video_play_body"><img src="../Assets/ICONS/Playbutton.svg" alt="" class="video_play_icon"></a>
+              </div> -->
+      <!-- </div>
+          </div>
         </div>
-      </section>
+      </section> -->
+      <!-- <section data-video-section="video_main_section">
+        <div class="video_section_body">
+          <div class="grid-container">
+            <div class="grid-item">
+              <img src="../Assets/WORK/work-1.jpg" alt="work-1" class="video_main_image">
+              <div class="video_icon_content">
+                <a href="#" class="video_play_body">
+                  <img src="../Assets/WORKS/Playbutton.svg" alt="play_button" class="video_play_icon">
+                </a>
+              </div>
+            </div>
+            <div class="grid-item">
+              <img src="../Assets/WORK/work-2.jpg" alt="work-2" class="video_main_image">
+              <div class="video_icon_content">
+                <a href="#" class="video_play_body">
+                  <img src="../Assets/WORKS/Playbutton.svg" alt="play_button" class="video_play_icon">
+                </a>
+              </div>
+            </div>
+            <div class="grid-item">
+              <img src="../Assets/WORK/work-3.jpg" alt="work-3" class="video_main_image">
+              <div class="video_icon_content">
+                <a href="#" class="video_play_body">
+                  <img src="../Assets/WORKS/Playbutton.svg" alt="play_button" class="video_play_icon">
+                </a>
+              </div>
+            </div>
+            <div class="grid-item">
+              <img src="../Assets/WORK/work-4.jpg" alt="work-4" class="video_main_image">
+              <div class="video_icon_content">
+                <a href="#" class="video_play_body">
+                  <img src="../Assets/WORKS/Playbutton.svg" alt="play_button" class="video_play_icon">
+                </a>
+              </div>
+            </div>
+            <div class="grid-item">
+              <img src="../Assets/WORK/work-5.jpg" alt="work-5" class="video_main_image">
+              <div class="video_icon_content">
+                <a href="#" class="video_play_body">
+                  <img src="../Assets/WORKS/Playbutton.svg" alt="play_button" class="video_play_icon">
+                </a>
+              </div>
+            </div>
+            <div class="grid-item">
+              <img src="../Assets/WORK/work-6.jpg" alt="work-6" class="video_main_image">
+              <div class="video_icon_content">
+                <a href="#" class="video_play_body">
+                  <img src="../Assets/WORKS/Playbutton.svg" alt="play_button" class="video_play_icon">
+                </a>
+              </div>
+            </div>
+            <div class="grid-item">
+              <img src="../Assets/WORK/work-7.jpg" alt="work-7" class="video_main_image">
+              <div class="video_icon_content">
+                <a href="#" class="video_play_body">
+                  <img src="../Assets/WORKS/Playbutton.svg" alt="play_button" class="video_play_icon">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- <section data-video-section="video_main_section">
+        <div class="video_section_body">
+          <div class="grid-container">
+            <div class="grid-item large">
+              <img src="../Assets/WORK/work-1.jpg" alt="work-1" class="video_main_image">
+              <div class="video_icon_content">
+                <a href="#" class="video_play_body">
+                  <img src="../Assets/WORKS/Playbutton.svg" alt="play_button" class="video_play_icon">
+                </a>
+              </div>
+            </div>
+            <div class="grid-item">
+              <img src="../Assets/WORK/work-2.jpg" alt="work-2" class="video_main_image">
+              <div class="video_icon_content">
+                <a href="#" class="video_play_body">
+                  <img src="../Assets/WORKS/Playbutton.svg" alt="play_button" class="video_play_icon">
+                </a>
+              </div>
+            </div>
+            <div class="grid-item">
+              <img src="../Assets/WORK/work-3.jpg" alt="work-3" class="video_main_image">
+              <div class="video_icon_content">
+                <a href="#" class="video_play_body">
+                  <img src="../Assets/WORKS/Playbutton.svg" alt="play_button" class="video_play_icon">
+                </a>
+              </div>
+            </div>
+            <div class="grid-item">
+              <img src="../Assets/WORK/work-4.jpg" alt="work-4" class="video_main_image">
+              <div class="video_icon_content">
+                <a href="#" class="video_play_body">
+                  <img src="../Assets/WORKS/Playbutton.svg" alt="play_button" class="video_play_icon">
+                </a>
+              </div>
+            </div>
+            <div class="grid-item">
+              <img src="../Assets/WORK/work-5.jpg" alt="work-5" class="video_main_image">
+              <div class="video_icon_content">
+                <a href="#" class="video_play_body">
+                  <img src="../Assets/WORKS/Playbutton.svg" alt="play_button" class="video_play_icon">
+                </a>
+              </div>
+            </div>
+            <div class="grid-item">
+              <img src="../Assets/WORK/work-6.jpg" alt="work-6" class="video_main_image">
+              <div class="video_icon_content">
+                <a href="#" class="video_play_body">
+                  <img src="../Assets/WORKS/Playbutton.svg" alt="play_button" class="video_play_icon">
+                </a>
+              </div>
+            </div>
+            <div class="grid-item large">
+              <img src="../Assets/WORK/work-7.jpg" alt="work-7" class="video_main_image">
+              <div class="video_icon_content">
+                <a href="#" class="video_play_body">
+                  <img src="../Assets/WORKS/Playbutton.svg" alt="play_button" class="video_play_icon">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
       <!-- End of Video Section -->
       <!-- Counter Section -->
       <section data-counter="counter_section">
         <div class="container">
           <div class="counter_content">
             <div class="counter_first_items">
-              <div class="counter_items_content">
-                <img src="../Assets/ICONS/ci-1.png" alt="" class="counter_items_image">
+              <div class="counter_items_content flex justify-center">
+                <img
+                  src="../Assets/ICONS/ci-1.png"
+                  alt=""
+                  class="counter_items_image"
+                />
                 <h2>230</h2>
                 <p>Compled Projects</p>
-             </div>
+              </div>
             </div>
             <div class="counter_second_items">
               <div class="counter_items_content">
-                <img src="../Assets/ICONS/ci-2.png" alt="" class="counter_items_image">
+                <img
+                  src="../Assets/ICONS/ci-2.png"
+                  alt=""
+                  class="counter_items_image"
+                />
                 <h2>1068</h2>
                 <p>Happy clients</p>
               </div>
             </div>
             <div class="counter_third_items">
               <div class="counter_items_content">
-                <img src="../Assets/ICONS/ci-3.png" alt="" class="counter_items_image">
+                <img
+                  src="../Assets/ICONS/ci-3.png"
+                  alt=""
+                  class="counter_items_image"
+                />
                 <h2>230</h2>
                 <p>Perspective clients</p>
               </div>
             </div>
             <div class="counter_fourth_items">
               <div class="counter_items_content">
-                <img src="../Assets/ICONS/ci-4.png" alt="" class="counter_items_image">
+                <img
+                  src="../Assets/ICONS/ci-4.png"
+                  alt=""
+                  class="counter_items_image"
+                />
                 <h2>230</h2>
                 <p>Compled projects</p>
               </div>
@@ -262,9 +418,66 @@
         </div>
       </section>
       <!-- End of Counter Section -->
+      <!--Teams Section  -->
+      <section data-teams="teams_main_section">
+        <div class="container">
+          <div class="teams_content">
+            <p>NICE TO MEET</p>
+            <h2>OUR TEAM</h2>
+            <div class="teams_image flex">
+              <img src="../Assets/TEAMS/team-1.jpg" alt="" />
+              <img src="../Assets/TEAMS/team-2.jpg" alt="" />
+              <img src="../Assets/TEAMS/team-3.jpg" alt="" />
+              <img src="../Assets/TEAMS/team-4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Teams Section -->
+      <!-- Blog Section -->
+      <section data-blog-update="blog_section"></section>
+      <!-- Call to Action Section -->
+      <section data-cat="call-to-action">
+        <div class="container">
+          <div>
+            <h2>Fresh Ideas, Fresh Moments Giving Wings to your Stories.</h2>
+            <p>INC5000, Best places to work 2019</p>
+            <a href="">START YOUR STORIES</a>
+          </div>
+        </div>
+      </section>
+      <!-- End of Call To Action Section -->
+      <!-- Footer Section -->
+      <footer data-footer="footer-section" class="w-full h-ful">
+        <div class="container">
+            <div class="footer_logo_section flex justify-between items-center py-7 mb-4">
+              <div class=""><img src="../Assets/LOGO/logo.png" alt=""></div>
+              <div class="flex gap-4 justify-start">
+                <a href="" class="footer_icon_body h-10 w-10 rounded-full flex items-center justify-center">
+                  <img src="../Assets/SOCIAL ICONS/facebook.svg" alt="" class="nav_icons">
+                </a>
+                <a href="" class="footer_icon_body h-10 w-10 rounded-full flex items-center justify-center">
+                  <img src="../Assets/SOCIAL ICONS/twitter.svg" alt="" class="nav_icons">
+                </a>
+                <a href="" class="footer_icon_body h-10 w-10 rounded-full flex items-center justify-center">
+                  <img src="../Assets/SOCIAL ICONS/dribbble.svg" alt="" class="nav_icons">
+                </a>
+                <a href="" class="footer_icon_body h-10 w-10 rounded-full flex items-center justify-center">
+                  <img src="../Assets/SOCIAL ICONS/instagram.svg" alt="" class="nav_icons">
+                </a>
+                <a href="" class="footer_icon_body h-10 w-10 rounded-full flex items-center justify-center">
+                  <img src="../Assets/SOCIAL ICONS/youtube.svg" alt="" class="nav_icons">
+                </a>
+              </div>
+            </div>
+            
+          </div>
+      </footer>
+      <!-- End of Footer Section -->
     </main>
 
     <script src="../JS/app.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <script
       src="https://kit.fontawesome.com/ee04826dda.js"
       crossorigin="anonymous"
