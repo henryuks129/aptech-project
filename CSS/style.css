@@ -1,5 +1,6 @@
 /* General body & tag styles */
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
   margin: 0;
@@ -33,7 +34,7 @@ a {
 
 /* hero background */
 
-.container {
+.cc-container {
   width: 85%;
   margin: auto;
 }

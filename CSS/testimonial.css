@@ -1,0 +1,19 @@
+.testimonial {
+  background-image: url(../Assets/testimonial-bg.jpg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.testimonial .heading {
+  color: white;
+  text-align: center;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.testimonial .heading .heading-special::after {
+  left: 40%;
+}
