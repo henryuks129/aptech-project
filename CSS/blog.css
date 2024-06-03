@@ -1,0 +1,100 @@
+.blog {
+  background: #100028;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.blog .heading {
+  color: white;
+  text-align: center;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.blog .heading .heading-special::after {
+  left: 40%;
+}
+
+.blog .blog-content {
+  margin-top: 50px;
+}
+
+.blog .blog-content .card {
+  max-width: 390px;
+  padding: 30px 20px;
+  border: 1px solid #3d3a64;
+}
+
+.blog .blog-content .card:hover {
+  background-image: url(../Assets/blog-1.jpg.webp);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blog .blog-content .card h4 {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 31px;
+  margin-bottom: 18px;
+  font-size: 24px;
+  margin: 0;
+}
+
+.blog .blog-content .card ul {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.blog .blog-content .card ul li {
+  color: #777777;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 300;
+  margin-right: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.blog .blog-content .card ul li:first-child::after {
+  position: absolute;
+  right: -16px;
+  top: 7px;
+  content: "/";
+}
+
+.blog .blog-content .card ul li:last-child {
+  margin-right: 0;
+}
+
+.blog .blog-content .card p {
+  font-weight: 300;
+  line-height: 29px;
+  margin-bottom: 22px;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #adadad;
+}
+
+.blog .blog-content .card a {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.blog .blog-content .card a .arrow-right {
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.5;
+  position: relative;
+  top: 4px;
+  margin-left: 5px;
+}
+
+.blog .blog-content .card a .arrow-right img {
+  height: 30px;
+  width: 30px;
+  mix-blend-mode: color-burn;
+}
