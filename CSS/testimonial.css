@@ -17,3 +17,60 @@
 .testimonial .heading .heading-special::after {
   left: 40%;
 }
+
+.testimonial-content {
+  padding-bottom: 200px;
+}
+
+.testimonial-swiper {
+  display: flex;
+}
+
+.testimonial .testimonial-content .card {
+  max-width: 410px;
+}
+
+.testimonial .testimonial-content .card .card-quote {
+  padding: 30px 40px 25px 30px;
+  border: 1px solid #3d3a64;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 9;
+}
+
+.testimonial .testimonial-content .card .card-quote p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 30px;
+  margin-bottom: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.testimonial .testimonial-content .card .card-profile {
+  padding-left: 30px;
+}
+
+.testimonial .testimonial-content .card .card-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  max-width: 100%;
+  margin-right: 20px;
+}
+
+.testimonial .testimonial-content .card .card-profile h5 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.testimonial .testimonial-content .card .card-profile span {
+  color: #ffffff;
+  font-size: 14px;
+  display: inline-block;
+}
+

@@ -78,3 +78,34 @@ document.addEventListener("DOMContentLoaded", function () {
   // Call nextSlide every 3 seconds
   setInterval(nextSlide, 3000);
 });
+
+var swiper = new Swiper(".slide-content", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  slidesPerGroup: 1,
+  centerSlide: true,
+  grabCursor: true,
+  fade: true,
+  loop: true,
+  speed: 2000,
+  autoplay: {
+    delay: 3000, // Time in milliseconds (3000ms = 3 seconds)
+    disableOnInteraction: false, // Continue autoplay after user interactions
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    950: {
+      slidesPerView: 3,
+    },
+  },
+});
