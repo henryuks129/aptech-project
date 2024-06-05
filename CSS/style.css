@@ -14,12 +14,12 @@ body {
   font-family: "Play", sans-serif;
 }
 
-li {
+.nav_items_list li {
   list-style: none;
   padding: 7px;
 }
 
-a {
+.nav_items_list a {
   text-decoration: none;
   color: white;
 }
@@ -29,7 +29,7 @@ a {
 /* hero background */
 
 .container {
-  width: 85%;
+  width: 80%;
   margin: auto;
 }
 
@@ -378,14 +378,15 @@ nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  position: relative;
+  justify-content: center;
+  gap: 30px;
+  /* position: relative; */
   height: 400px;
 }
 
 .counter_first_items{
-  width: 255px;
-  height: 255px;
+  width: 250px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -407,8 +408,8 @@ nav {
 
 .counter_second_items{
   margin-top: -180px;
-  width: 255px;
-  height: 255px;
+  width: 250px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -417,8 +418,8 @@ nav {
 }
 
 .counter_third_items{
-  width: 255px;
-  height: 255px;
+  width: 250px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -430,8 +431,8 @@ nav {
 .counter_fourth_items{
   /* position: absolute; */
   margin-top: -180px;
-  width: 255px;
-  height: 255px;
+  width: 250px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
